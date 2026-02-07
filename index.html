@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nebim V3 ERP Danışmanlığı | Enes Işıtan</title>
+  <meta name="description" content="Nebim V3 ERP & Üretim danışmanlığı: kurulum, eğitim, SQL raporlama, etiket/barkod, e-Fatura/e-İrsaliye süreçleri ve uzaktan destek." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top">NebimV3 Danışmanlık</a>
+      <nav class="menu">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#surec">Süreç</a>
+        <a href="#ornekler">Örnek Çalışmalar</a>
+        <a href="#sss">SSS</a>
+        <a class="btn btn-light" href="#iletisim">İletişim</a>
+      </nav>
+      <button class="burger" aria-label="Menü" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu container">
+      <a href="#hizmetler" onclick="toggleMenu()">Hizmetler</a>
+      <a href="#surec" onclick="toggleMenu()">Süreç</a>
+      <a href="#ornekler" onclick="toggleMenu()">Örnek Çalışmalar</a>
+      <a href="#sss" onclick="toggleMenu()">SSS</a>
+      <a href="#iletisim" onclick="toggleMenu()">İletişim</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Nebim V3 ERP • Nebim Üretim • SQL Raporlama</p>
+          <h1>Nebim V3 ERP danışmanlığıyla süreçlerinizi hızlandırın.</h1>
+          <p class="muted">
+            Kurulum/parametre, kullanıcı eğitimleri, üretim (reçete–iş emri–maliyet),
+            etiket/barkod tasarımları, e-Fatura/e-İrsaliye akışları ve SQL tabanlı raporlar.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#iletisim">Ücretsiz Ön Görüşme</a>
+            <a class="btn btn-ghost" href="https://wa.me/90XXXXXXXXXX" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+          <div class="mini-stats">
+            <div><strong>Uzaktan</strong><span>Destek</span></div>
+            <div><strong>Üretim</strong><span>BOM/Maliyet</span></div>
+            <div><strong>SQL</strong><span>Rapor & Performans</span></div>
+          </div>
+        </div>
+        <div class="card hero-card">
+          <h3>Hızlı İhtiyaç Formu</h3>
+          <p class="muted small">2 dakikada doldurun, size dönüş yapayım.</p>
+          <form id="leadForm">
+            <label>Ad Soyad
+              <input name="name" required placeholder="Adınız" />
+            </label>
+            <label>Telefon / WhatsApp
+              <input name="phone" required placeholder="05xx xxx xx xx" />
+            </label>
+            <label>İhtiyacınız
+              <select name="need">
+                <option>Nebim V3 Eğitim</option>
+                <option>Nebim Üretim (Reçete/İş Emri/Maliyet)</option>
+                <option>SQL Raporlama / Performans</option>
+                <option>Etiket / Barkod / Fiyat-İndirim</option>
+                <option>e-Fatura / e-İrsaliye</option>
+                <option>Genel Danışmanlık</option>
+              </select>
+            </label>
+            <label>Kısa not
+              <textarea name="note" rows="3" placeholder="Kısaca anlatın..."></textarea>
+            </label>
+            <button class="btn btn-primary w-100" type="submit">Gönder</button>
+            <p class="small muted">Gönderim sonrası WhatsApp’a yönlendirebiliriz.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="hizmetler" class="section">
+      <div class="container">
+        <h2>Hizmetler</h2>
+        <p class="muted">İhtiyacınıza göre modüler ilerliyoruz.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Nebim V3 Kurulum & Parametre</h3>
+            <p class="muted">Şirket/mağaza yapısı, depo–kasa–pos, kullanıcı yetkileri, süreç parametreleri.</p>
+          </article>
+          <article class="card">
+            <h3>Nebim Üretim</h3>
+            <p class="muted">Reçete (BOM), iş emri, ön maliyet–gerçekleşen maliyet, üretim akış tasarımı.</p>
+          </article>
+          <article class="card">
+            <h3>SQL Raporlama</h3>
+            <p class="muted">Özel raporlar, view/procedure, performans iyileştirme, veri doğrulama.</p>
+          </article>
+          <article class="card">
+            <h3>Etiket / Barkod</h3>
+            <p class="muted">Fiyat–indirim kurgusu, etiket dizaynı, barkod tipleri ve alan eşleştirmeler.</p>
+          </article>
+          <article class="card">
+            <h3>e-Dönüşüm</h3>
+            <p class="muted">e-Fatura/e-Arşiv/e-İrsaliye süreçleri, UBL/schematron hataları, statü sorunları.</p>
+          </article>
+          <article class="card">
+            <h3>Uzaktan Destek</h3>
+            <p class="muted">Hızlı müdahale, log analizi, kullanıcı hataları, canlıda güvenli çözüm.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="surec" class="section alt">
+      <div class="container">
+        <h2>Nasıl çalışıyoruz?</h2>
+        <div class="steps">
+          <div class="step"><span>1</span><div><h4>Ön Analiz</h4><p class="muted">Hedef ve sorunları netleştiriyoruz.</p></div></div>
+          <div class="step"><span>2</span><div><h4>Süreç Tasarımı</h4><p class="muted">Modül/akış/rapor planı çıkarıyoruz.</p></div></div>
+          <div class="step"><span>3</span><div><h4>Uygulama & Test</h4><p class="muted">Canlıya geçmeden önce kontrol ediyoruz.</p></div></div>
+          <div class="step"><span>4</span><div><h4>Eğitim</h4><p class="muted">Kullanıcı ve yönetici eğitimleri.</p></div></div>
+          <div class="step"><span>5</span><div><h4>Destek</h4><p class="muted">İyileştirme ve sürekli destek.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ornekler" class="section">
+      <div class="container">
+        <h2>Örnek çalışmalar</h2>
+        <p class="muted">Portföyünüzü burada madde madde sergileyebilirsiniz.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Üretimde Ön Maliyet Raporu</h3>
+            <ul class="muted">
+              <li>Reçete bazlı maliyet kırılımı</li>
+              <li>Kur/fiyat grubu hesapları</li>
+              <li>Excel/PDF çıktı</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Etiket Fiyat–İndirim Kurgusu</h3>
+            <ul class="muted">
+              <li>PSF/ISF fiyat çekimi</li>
+              <li>Yüzde indirim hesaplamaları</li>
+              <li>Mağaza etiketi standardı</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>e-Fatura Hata Çözüm</h3>
+            <ul class="muted">
+              <li>Schematron/UBL kontrolleri</li>
+              <li>Statü ve akış düzeltmeleri</li>
+              <li>Entegratör uyumluluğu</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sss" class="section alt">
+      <div class="container">
+        <h2>SSS</h2>
+        <details class="faq">
+          <summary>Uzaktan destek veriyor musunuz?</summary>
+          <p>Evet. TeamViewer/AnyDesk ile uzaktan destek sağlayabiliyorum.</p>
+        </details>
+        <details class="faq">
+          <summary>SQL ile özel rapor çıkarıyor musunuz?</summary>
+          <p>Evet. İhtiyaca göre view/procedure ve performans odaklı düzenlemeler yapıyorum.</p>
+        </details>
+        <details class="faq">
+          <summary>Nebim Üretim tarafında neler yapıyorsunuz?</summary>
+          <p>Reçete (BOM), iş emri, maliyet raporları, üretim akışları ve kullanıcı eğitimleri.</p>
+        </details>
+        <details class="faq">
+          <summary>e-Fatura/e-İrsaliye problemlerine bakıyor musunuz?</summary>
+          <p>Evet. UBL/schematron hataları, statü sorunları ve süreç tasarımı dahil destek veriyorum.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section">
+      <div class="container contact">
+        <div>
+          <h2>İletişim</h2>
+          <p class="muted">Kısa bir mesaj bırakın; size en hızlı kanaldan dönüş sağlayalım.</p>
+          <div class="contact-cards">
+            <a class="card link" href="https://wa.me/905445640167" target="_blank" rel="noreferrer">
+              <h3>WhatsApp</h3><p class="muted">Hızlı dönüş</p>
+            </a>
+            <a class="card link" href="mailto:erpmrpdanismanlik@gmail.com">
+              <h3>E-posta</h3><p class="muted">erpmrpdanismanlik@gmail.com</p>
+            </a>
+          </div>
+          <p class="small muted">* </p>
+        </div>
+
+        <div class="card">
+          <h3>Mesaj Formu</h3>
+          <form action="https://formspree.io/f/xbdajpdp" method="POST">
+           <input type="hidden" name="_subject" value="Web Sitesinden Yeni Mesaj">
+<input type="hidden" name="_captcha" value="false">
+
+            <label>Firma
+              <input name="company" placeholder="Firma adı" />
+            </label>
+            <label>E-posta
+              <input name="email" type="email" placeholder="ornek@firma.com" />
+            </label>
+            <label>Mesaj
+              <textarea name="message" rows="5" required placeholder="Kısaca ihtiyacınızı yazın..."></textarea>
+            </label>
+            <button class="btn btn-primary w-100" type="submit">Gönder</button>
+            <p class="small muted">Bilgilerinizi Doldurarak İletişime Geçebilirsiniz..</p>
+            <p id="successMessage" class="small" style="display:none; color:#5eead4; margin-top:10px;">
+Teşekkürler! Mesajınız gönderildi. En kısa sürede dönüş yapacağız.
+</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Nebim V3 Danışmanlık-Enes Işıtan • Tüm hakları saklıdır.</p>
+      <div class="footer-links">
+        <a href="#top">Yukarı</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
