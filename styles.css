@@ -99,3 +99,24 @@ input:focus,select:focus,textarea:focus{border-color:rgba(94,234,212,.5)}
   .menu{display:none}
   .burger{display:inline-flex}
 }
+.mini-link{
+  text-decoration:none;
+  display:block;
+}
+
+.mini-link div{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px 12px;
+  min-width:120px;
+  background:rgba(255,255,255,.03);
+  transition:0.2s;
+}
+
+.mini-link div:hover{
+  transform:translateY(-3px);
+  border-color:var(--accent);
+  box-shadow:0 6px 20px rgba(0,0,0,.2);
+}
+
+
