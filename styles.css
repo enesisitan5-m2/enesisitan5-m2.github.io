@@ -287,6 +287,46 @@ html, body {
     padding: 0 16px;
   }
 }
+/* ===== MOBİL ORTALAMA DÜZELTME ===== */
+
+/* Sayfanın sağa sola taşmasını engeller */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Container ortalama */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Tüm bölümler ekranı taşırmasın */
+section, div {
+  max-width: 100%;
+}
+
+/* Mobil özel */
+@media (max-width: 768px) {
+
+  .hero-grid,
+  .contact,
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta .btn {
+    width: 100%;
+  }
+}
+
 
 
 
