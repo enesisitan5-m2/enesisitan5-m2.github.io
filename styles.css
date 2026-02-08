@@ -9,14 +9,10 @@
   --accent2:#60a5fa;
 }
 
-/* RESET */
-*{
-  box-sizing:border-box;
+*{box-sizing:border-box}
+html,body{
   margin:0;
   padding:0;
-}
-
-html,body{
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
   background:var(--bg);
   color:var(--text);
@@ -25,7 +21,6 @@ html,body{
 
 a{color:inherit;text-decoration:none}
 
-/* CONTAINER */
 .container{
   width:100%;
   max-width:1100px;
@@ -45,8 +40,8 @@ a{color:inherit;text-decoration:none}
 
 .nav{
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
   padding:14px 0;
 }
 
@@ -59,7 +54,7 @@ a{color:inherit;text-decoration:none}
 .menu a:hover{color:var(--text)}
 
 /* HERO */
-.hero{padding:50px 0}
+.hero{padding:56px 0 30px}
 
 .hero-grid{
   display:grid;
@@ -69,17 +64,15 @@ a{color:inherit;text-decoration:none}
 }
 
 h1{
-  font-size:40px;
-  margin:10px 0;
+  font-size:42px;
   line-height:1.2;
+  margin:14px 0 10px;
 }
 
 h2{
-  font-size:28px;
+  font-size:30px;
   margin-bottom:10px;
 }
-
-h3{margin-bottom:6px}
 
 .muted{color:var(--muted)}
 .small{font-size:13px}
@@ -87,14 +80,14 @@ h3{margin-bottom:6px}
 /* BUTTONS */
 .cta{
   display:flex;
-  gap:10px;
+  gap:12px;
+  margin:18px 0;
   flex-wrap:wrap;
-  margin-top:14px;
 }
 
 .btn{
-  padding:10px 14px;
   border-radius:12px;
+  padding:10px 14px;
   border:1px solid var(--line);
   display:inline-flex;
   align-items:center;
@@ -104,19 +97,16 @@ h3{margin-bottom:6px}
 
 .btn-primary{
   background:linear-gradient(90deg,var(--accent2),var(--accent));
-  border:0;
   color:#07101f;
+  border:0;
   font-weight:700;
 }
-
-.w-100{width:100%}
 
 /* MINI STATS */
 .mini-stats{
   display:flex;
-  gap:12px;
+  gap:14px;
   margin-top:16px;
-  flex-wrap:wrap;
 }
 
 .mini-stats > div{
@@ -127,13 +117,13 @@ h3{margin-bottom:6px}
 }
 
 /* SECTION */
-.section{padding:50px 0}
+.section{padding:46px 0}
 
 /* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:16px;
+  gap:14px;
 }
 
 /* CARD */
@@ -169,24 +159,24 @@ input,select,textarea{
 
 /* STEPS */
 .steps{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
+  display:grid;
+  gap:12px;
+  margin-top:14px;
 }
 
 .step{
   display:flex;
-  gap:14px;
+  gap:12px;
   align-items:flex-start;
-  padding:18px;
-  border-radius:16px;
-  background:rgba(255,255,255,.03);
   border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px;
+  background:rgba(255,255,255,.02);
 }
 
 .step span{
-  min-width:40px;
-  height:40px;
+  width:30px;
+  height:30px;
   border-radius:10px;
   display:flex;
   align-items:center;
@@ -200,7 +190,7 @@ input,select,textarea{
 .contact{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:20px;
+  gap:16px;
 }
 
 .contact-cards{
@@ -212,15 +202,15 @@ input,select,textarea{
 /* FOOTER */
 .footer{
   border-top:1px solid var(--line);
-  padding:20px 0;
+  padding:18px 0;
   color:var(--muted);
 }
 
 .footer-row{
   display:flex;
   justify-content:space-between;
-  flex-wrap:wrap;
   gap:10px;
+  flex-wrap:wrap;
 }
 
 /* WHATSAPP FLOAT */
@@ -231,41 +221,25 @@ input,select,textarea{
   width:60px;
   height:60px;
   background:#25D366;
+  color:white;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
   font-size:28px;
-  color:white;
-  box-shadow:0 8px 20px rgba(0,0,0,.3);
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
   z-index:999;
 }
 
-/* =====================
-   MOBILE FINAL
-===================== */
+/* ===== MOBİL ===== */
 @media (max-width:920px){
 
-  h1{font-size:28px}
+  h1{font-size:32px}
 
   .menu{display:none}
 
   .hero-grid{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-  }
-
-  .cta{
-    flex-direction:column;
-  }
-
-  .cta .btn{
-    width:100%;
-  }
-
-  .mini-stats{
-    flex-direction:column;
+    grid-template-columns:1fr;
   }
 
   .grid{
@@ -280,11 +254,21 @@ input,select,textarea{
     grid-template-columns:1fr;
   }
 
+  .mini-stats{
+    flex-direction:column;
+  }
+
+  .cta{
+    flex-direction:column;
+  }
+
+  .cta .btn{
+    width:100%;
+  }
+
   .whatsapp-float{
     width:52px;
     height:52px;
     font-size:22px;
-    bottom:15px;
-    right:15px;
   }
 }
