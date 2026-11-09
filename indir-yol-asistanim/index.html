@@ -228,6 +228,13 @@
       font-size: 42px;
     }
 
+    .appstore-logo {
+      width: 44px;
+      height: 44px;
+      display: block;
+      filter: drop-shadow(0 3px 5px rgba(0,0,0,.28));
+    }
+
     .play-logo {
       width: 42px;
       height: 42px;
@@ -472,7 +479,22 @@
           <a class="store"
              href="https://apps.apple.com/app/id6792756828"
              aria-label="Yol Asistanım uygulamasını App Store'dan indir">
-            <span class="store-icon"></span>
+            <span class="store-icon" aria-hidden="true">
+              <svg class="appstore-logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <defs>
+                  <linearGradient id="appstore-blue" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#20B9FF"/>
+                    <stop offset="1" stop-color="#075BEE"/>
+                  </linearGradient>
+                </defs>
+                <rect x="1" y="1" width="62" height="62" rx="14" fill="url(#appstore-blue)"/>
+                <g stroke="#fff" stroke-width="5.8" stroke-linecap="round" fill="none">
+                  <path d="M18 47 39 13"/>
+                  <path d="M25 13 46 47"/>
+                  <path d="M12 39h40"/>
+                </g>
+              </svg>
+            </span>
             <span class="store-copy">
               <small>Şuradan indirin</small>
               <strong>App Store</strong>
